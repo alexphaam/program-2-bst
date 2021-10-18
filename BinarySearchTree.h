@@ -1,4 +1,5 @@
 // STUDENT CODE
+// Author: Alexander Pham
 // San Diego State University
 // CS210/CS496: Data Structures
 //
@@ -60,13 +61,13 @@ namespace sdsu {
 
         std::shared_ptr<BSTNode> root;
 
-        // this function may help when you write other functions. Sometimes you
-        // wnat to literally work with the node holding the key, and not
+        // This function may help when you write other functions. Sometimes you
+        // want to literally work with the node holding the key, and not
         // just the keys and values themselves. Your design will decide if you
         // need something like this or not.
         // BSTNode &getNode(const KEY &key){}
 
-        // This is a PRIVATE version of teh insert function that no one on
+        // This is a PRIVATE version of the insert function that no one on
         // the outside can call. I find it useful for something like
         // the public version to kick things off, and this does the real
         // work.
@@ -125,7 +126,7 @@ namespace sdsu {
             std::shared_ptr<VALUE*> arr = std::make_shared<VALUE*>(raw);
 
             // Todo: Students fill up the arr[] with the values in-order
-            // Todo: with respect to their keys (not each other). Extra Credit
+            // Todo: With respect to their keys (not each other). Extra Credit
 
             std::pair<std::shared_ptr<VALUE*>,int> vals(arr,size());
             return vals;
